@@ -1,24 +1,23 @@
 1. What is the Big O for this?
 
 1) Determine the Big O for the following algorithm: You are sitting in a room with 15 people. 
-You want to find a playmate for your dog, preferably of the same breed. 
+(Q) You want to find a playmate for your dog, preferably of the same breed. 
 So you want to know if anyone out of the 15 people have the same breed as your dog. 
 You stand up and yell out, who here has a golden retriever and would like to be a playdate for my golden. 
 Someone yells - "I do, be happy to bring him over"
-
-O(1) because the way he computes number of operations by asking the room of people(= size of input) the run time doesn't change, no matter how big the size of the input is.
+(A) O(1) because the way he computes number of operations by asking the room of people(= size of input) the run time doesn't change, no matter how big the size of the input is.
 
 
 2) Determine the Big O for the following algorithm: 
-You are sitting in a room with 15 people. You want to find a playmate for your dog who is of the same breed. 
+(Q) You are sitting in a room with 15 people. You want to find a playmate for your dog who is of the same breed. 
 So you want to know if anyone out of the 15 people have the same breed as your dog. 
 You start with the first person and ask him if he has a golden retriever. 
 He says no, then you ask the next person, and the next, and the next until you find someone who has a golden or there is no one else to ask.
-
-O(n) because the number of people(= size of input) asked directly impacts the run time.
+(A) O(n) because the number of people(= size of input) asked directly impacts the run time.
 
 2. Even or odd
-What is the Big O of the following algorithm? Explain your answer
+(Q) What is the Big O of the following algorithm? Explain your answer
+(A) This is O(1) because there's only one computation, and the run time should remain the same, no matter the size of the input.
 
 function isEven(value) {
     if (value % 2 === 0) {
@@ -29,10 +28,10 @@ function isEven(value) {
     }
 }
 
-This is O(1) because there's only one computation, and the run time should remain the same, no matter the size of the input.
 
 3. Are you here?
-What is the Big O of the following algorithm? Explain your answer
+(Q) What is the Big O of the following algorithm? Explain your answer
+(A) Polynomial O(n^2) because theres 2 loops nested inside one another.
 
 function areYouHere(arr1, arr2) {
     for (let i = 0; i < arr1.length; i++) {
@@ -45,10 +44,10 @@ function areYouHere(arr1, arr2) {
     return false;
 }
 
-Polynomial O(n^2) because theres 2 loops nested inside one another.
 
 4. Doubler
-What is the Big O of the following algorithm? Explain your answer
+(Q) What is the Big O of the following algorithm? Explain your answer
+(A) O(n) inputting an array which means the number of computations directly correlates to the size of inputs.
 
 function doubleArrayValues(array) {
     for (let i = 0; i < array.length; i++) {
@@ -57,4 +56,3 @@ function doubleArrayValues(array) {
     return array;
 }
 
-O(n) inputting an array which means the number of computations directly correlates to the size of inputs.
