@@ -104,8 +104,11 @@ function compute(num) {
 }
 
 8. An efficient search
-(Q) In this example, we return to the problem of searching using a more sophisticated approach than in naive search, above. Assume that the input array is always sorted. What is the Big O of the following algorithm? Explain your answer
-(A) 
+(Q) In this example, we return to the problem of searching using a more sophisticated approach than in naive search, above. Assume that the input array is always sorted.
+ What is the Big O of the following algorithm? Explain your answer
+(A) Best Case:
+(A) Worst Case:
+(A) Avg. Case:
 
 function efficientSearch(array, item) {
     let minIndex = 0;
