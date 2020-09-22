@@ -58,7 +58,7 @@ function doubleArrayValues(array) {
 
 5. Naive search
 (Q) What is the Big O of the following algorithm? Explain your answer
-(A) 
+(A) Linear Time O(n) because the number of ops reflects directly to the size of inputs.
 
 function naiveSearch(array, item) {
     for (let i = 0; i < array.length; i++) {
@@ -70,7 +70,7 @@ function naiveSearch(array, item) {
 
 6. Creating pairs:
 (Q) What is the Big O of the following algorithm? Explain your answer
-(A)
+(A) Exponential Time O(2^n) because this algorithm doubles every single time its run.
 
 function createPairs(arr) {
     for (let i = 0; i < arr.length; i++) {
@@ -82,7 +82,10 @@ function createPairs(arr) {
 
 7. Compute the sequence
 (Q) What does the following algorithm do? What is its runtime complexity? Explain your answer
-(A) 
+(A) This creates the Fibonacci sequence, first we turn our input into an array, and run through each number that builds up to our input.
+The first number always returns 0, and the second and third always return 1, then the last else adds up the 2 previous indexes to create the last index.
+This is an example of Linear Time O(n), because the input directly impacts the run time.
+
 function compute(num) {
     let result = [];
     for (let i = 1; i <= num; i++) {
